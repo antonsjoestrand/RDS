@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 32" style="enable-background:new 0 0 30 32;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{fill:none;stroke:url(#Icon_map-health_00000079454150393830563620000008925190137222789534_);stroke-width:0.9804;stroke-miterlimit:10;}
+</style>
+<linearGradient id="Icon_map-health_00000025415847039280970980000014856467901594524593_" gradientUnits="userSpaceOnUse" x1="0.9566" y1="16" x2="29.0434" y2="16">
+	<stop  offset="0" style="stop-color:#72B8FF"/>
+	<stop  offset="0.9883" style="stop-color:#9889FF"/>
+</linearGradient>
+<path id="Icon_map-health" style="fill:none;stroke:url(#Icon_map-health_00000025415847039280970980000014856467901594524593_);stroke-width:0.9804;stroke-miterlimit:10;" d="
+	M28.6,11.5c0-0.3-0.3-0.6-0.6-0.6h-7.3c-0.3,0-0.6-0.3-0.6-0.6V3c0-0.3-0.3-0.6-0.6-0.6h-9c-0.3,0-0.6,0.3-0.6,0.6v7.3
+	c0,0.3-0.3,0.6-0.6,0.6H2c-0.3,0-0.6,0.3-0.6,0.6v9c0,0.3,0.3,0.6,0.6,0.6h7.3c0.3,0,0.6,0.3,0.6,0.6V29c0,0.3,0.3,0.6,0.6,0.6h9
+	c0.3,0,0.6-0.3,0.6-0.6v-7.3c0-0.3,0.3-0.6,0.6-0.6H28c0.3,0,0.6-0.3,0.6-0.6V11.5z"/>
+</svg>

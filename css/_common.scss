@@ -1,0 +1,224 @@
+.header {
+  position: relative;
+  width: 100%;
+  padding: $section 0;
+  background-color: $primary-color;
+  @include flex();
+
+  @include media("<tablet") {
+    padding-top: 216px;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    right: 25%;
+    transform: translate(50%);
+    @include bg_settings($size: contain);
+    position: absolute;
+
+    @include media("<tablet") {
+      right: 18%;
+    }
+
+    @include media("<600px") {
+      opacity: 0.06;
+    }
+  }
+
+  .icon--about {
+    background-image: url("../images/icons/about.svg");
+  }
+
+  .icon--healthcare {
+    background-image: url("../images/icons/healthcare.svg");
+  }
+
+  .icon--cannabis {
+    background-image: url("../images/icons/cannabis.svg");
+  }
+
+  .icon--legal {
+    background-image: url("../images/icons/legal.svg");
+  }
+
+  .icon--shipping {
+    background-image: url("../images/icons/shipping.svg");
+  }
+
+  .icon--tracking {
+    background-image: url("../images/icons/tracking-h.svg");
+  }
+
+  .icon--contact {
+    background-image: url("../images/icons/contact.svg");
+  }
+
+  .title {
+    h2 {
+      position: relative;
+      @include title();
+    }
+
+    h2.about {
+      @include line_header($offset: -358%);
+    }
+
+    h2.healthcare {
+      @include line_header($offset: -310%);
+    }
+
+    h2.cannabis {
+      @include line_header($offset: -360%);
+    }
+
+    h2.legal {
+      @include line_header($offset: -620%);
+    }
+
+    h2.shipping {
+      @include line_header($offset: -378%);
+    }
+
+    h2.tracking {
+      @include line_header($offset: -400%);
+    }
+
+    h2.contact {
+      @include line_header($offset: -305%);
+    }
+
+    h2.about,
+    h2.healthcare,
+    h2.cannabis,
+    h2.legal,
+    h2.shipping,
+    h2.tracking,
+    h2.contact {
+      @include media("<phone") {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.section__title {
+  @include title_section();
+}
+
+.dark {
+  color: $primary-color;
+}
+
+.light {
+  color: $white;
+}
+
+.download {
+  width: 100%;
+  @include flex();
+  padding: $section 0;
+  background-color: $white;
+
+  &__box {
+    position: relative;
+    width: 100%;
+    background-color: $secondary-color;
+    background: linear-gradient(
+      360deg,
+      rgba(34, 49, 63, 1) 0%,
+      rgba(57, 73, 88, 1) 100%
+    );
+    padding: 4.5rem 0;
+    z-index: 1;
+    overflow: hidden;
+
+    .road {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 16%;
+      @include bg($url: "../images/road_right.svg", $size: contain);
+      z-index: -1;
+
+      @include media("<1140px") {
+        display: none;
+      }
+
+      img {
+        position: absolute;
+        overflow: visible;
+        left: 71%;
+        top: -14%;
+        width: 70px;
+      }
+    }
+
+    .content {
+      width: 55%;
+      margin: 0 auto;
+      @include flex();
+      gap: 1.5rem;
+      text-align: center;
+
+      @include media("<tablet") {
+        width: 80%;
+      }
+
+      h2 {
+        @include title($size: $h2);
+
+        span {
+          color: $blue;
+        }
+      }
+
+      p {
+        @include paragraph();
+        padding-bottom: 0.5rem;
+      }
+
+      .actions {
+        @include flex($direction: row);
+        gap: 1rem;
+
+        @include media("<500px") {
+          gap: 1.5rem;
+        }
+
+        a {
+          @include button();
+          background-color: $blue;
+
+          @include media("<500px") {
+            display: none;
+          }
+
+          i {
+            margin-right: 10px;
+          }
+
+          &:hover {
+            background-color: $purple;
+          }
+        }
+
+        a.mobile {
+          display: none;
+
+          @include media("<500px") {
+            display: block;
+          }
+
+          i {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

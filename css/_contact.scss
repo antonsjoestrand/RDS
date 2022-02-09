@@ -1,0 +1,498 @@
+.support {
+  width: 100%;
+  padding-bottom: $section;
+
+  .section__title {
+    h2 {
+      @include line($offset: -266%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -291%;
+        }
+      }
+    }
+  }
+
+  .features {
+    position: relative;
+    width: 100%;
+
+    &__box {
+      @include flex($direction: row);
+      padding-bottom: $section;
+      gap: 2rem;
+
+      @include media("<tablet") {
+        max-width: 600px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+
+      .item {
+        max-width: 140px;
+        overflow: auto;
+        @include flex($justify: space-between);
+        gap: 1rem;
+
+        &__icon {
+          width: 100%;
+          height: 70px;
+          @include flex;
+
+          .icon {
+            width: 100%;
+            height: 100%;
+            @include bg_settings($size: contain);
+
+            &--1 {
+              background-image: url("../images/icons/general.svg");
+            }
+
+            &--2 {
+              background-image: url("../images/icons/shipping.svg");
+            }
+
+            &--3 {
+              background-image: url("../images/icons/application.svg");
+            }
+
+            &--4 {
+              background-image: url("../images/icons/invoice.svg");
+            }
+          }
+        }
+
+        &__text {
+          width: 68%;
+          text-align: center;
+
+          a {
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: $regular-font;
+            font-size: $text-size;
+            color: $blue-hover;
+            line-height: 1.4rem;
+
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .column__box {
+    width: 100%;
+    @include flex($direction: row, $justify: space-between);
+    gap: 2rem;
+
+    @include media("<1200px") {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+
+  .column {
+    .image {
+      height: 300px;
+      background-color: darkgray;
+      @include bg_settings();
+
+      @include media("<1200px") {
+        max-width: 380px;
+      }
+
+      @include media("<phone") {
+        min-width: 100%;
+      }
+    }
+
+    .img--track {
+      background-image: url("../images/resources/track.jpg");
+    }
+
+    .img--support {
+      background-image: url("../images/resources/support.jpeg");
+    }
+
+    .content {
+      background-color: $secondary-color;
+      padding: 2.5rem;
+      text-align: center;
+      @include flex();
+      gap: 1.5rem;
+
+      @include media("<1200px") {
+        max-width: 380px;
+      }
+
+      @include media("<phone") {
+        min-width: 100%;
+      }
+
+      h3 {
+        @include title_small();
+      }
+
+      p {
+        @include paragraph();
+      }
+
+      a {
+        @include button();
+        border: 2px solid $blue;
+        color: $blue;
+
+        &:hover {
+          color: $white;
+          border: 2px solid $white;
+        }
+      }
+    }
+  }
+}
+
+.locations {
+  background-color: $secondary-color;
+
+  .section__title {
+    h2 {
+      @include line($offset: -366%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -398%;
+        }
+      }
+    }
+  }
+
+  &__box {
+    width: 100%;
+    @include flex($direction: row);
+    padding-bottom: $section;
+
+    .content {
+      width: 50%;
+      padding-left: 6rem;
+      @include flex($align: flex-start);
+      gap: 3rem;
+
+      @include media("<tablet") {
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+      }
+
+      h3 {
+        @include title_small();
+        line-height: 1.8rem;
+      }
+
+      ul {
+        list-style: none;
+        padding-top: 1rem;
+        @include flex($align: flex-start);
+        gap: 0.5rem;
+
+        li {
+          position: relative;
+          @include paragraph();
+          padding-left: 30px;
+
+          i {
+            position: absolute;
+            left: -3px;
+            top: 48%;
+            transform: translateY(-50%);
+            color: $blue;
+          }
+
+          i.location,
+          i.phone {
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .map {
+      width: 50%;
+      margin-right: 6rem;
+      height: 300px;
+      @include bg($url: "../images/contact/locations.svg", $size: contain);
+
+      @include media("<tablet") {
+        display: none;
+      }
+    }
+  }
+}
+
+.connect {
+  .section__title {
+    h2 {
+      @include line($offset: -296%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -324%;
+        }
+      }
+    }
+  }
+
+  .social__row {
+    width: 100%;
+    @include flex($direction: row);
+    gap: 6rem;
+
+    @include media("<tablet") {
+      flex-wrap: wrap;
+      gap: 4rem;
+    }
+
+    .social__box {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $secondary-color;
+      @include flex();
+      cursor: pointer;
+
+      @include media("<phone") {
+        width: 80px;
+        height: 80px;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        @include flex();
+      }
+
+      i {
+        font-size: $h2;
+        color: $blue;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+      }
+
+      &:hover i {
+        color: $purple;
+      }
+    }
+  }
+}
+
+.contact__form {
+  width: 100%;
+  background-color: $secondary-color;
+
+  .section__title {
+    h2 {
+      @include line($offset: -376%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -412%;
+        }
+      }
+    }
+  }
+
+  .contact__box {
+    width: 100%;
+    position: relative;
+    @include flex();
+    padding-bottom: 6rem;
+
+    .form {
+      width: 55%;
+      margin: 0 auto;
+
+      @include media("<tablet") {
+        width: 100%;
+      }
+
+      .text {
+        padding-bottom: 3rem;
+
+        h3 {
+          text-align: center;
+          @include title_small();
+          line-height: 2rem;
+        }
+      }
+
+      form {
+        width: 100%;
+        @include flex();
+        gap: 2rem;
+
+        .form__line {
+          width: 100%;
+          height: 44px;
+          @include flex($align: flex-start);
+          gap: 0.5rem;
+
+          p {
+            font-size: $nav-size;
+            font-weight: $regular-font;
+            color: $blue;
+          }
+
+          .line {
+            width: 100%;
+            height: 2.5px;
+            background-color: $blue;
+          }
+        }
+
+        .multi {
+          width: 100%;
+          @include flex($direction: row);
+          gap: 2rem;
+
+          .input-1 {
+            width: 60%;
+          }
+
+          .input-2 {
+            width: 40%;
+          }
+
+          .input-1,
+          .input-2 {
+            position: relative;
+
+            input {
+              width: 100%;
+            }
+          }
+        }
+
+        .single {
+          width: 100%;
+          position: relative;
+
+          input {
+            width: 100%;
+          }
+        }
+
+        .multi,
+        .single {
+          input {
+            position: relative;
+            height: 44px;
+            border: 2px solid $footer-text;
+            outline: none;
+            background: none;
+            padding-left: 1rem;
+            color: $white;
+            z-index: 2;
+            transition: border $tr200;
+          }
+
+          label {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+            color: $footer-text;
+            font-weight: $regular-font;
+            transition: all $tr200;
+            cursor: text;
+            z-index: 1;
+          }
+
+          input:focus {
+            border: 2px solid $blue;
+          }
+
+          input:focus ~ label,
+          input:not(:placeholder-shown) ~ label {
+            background-color: $secondary-color;
+            font-size: 0.8rem;
+            color: $blue;
+            padding: 0 0.5rem;
+            top: 0;
+            z-index: 2;
+          }
+        }
+
+        .message {
+          position: relative;
+          width: 100%;
+
+          textarea {
+            width: 100%;
+            resize: none;
+            border: 2px solid $footer-text;
+            outline: none;
+            background: none;
+            padding-left: 1rem;
+            padding-top: 1rem;
+            color: $white;
+          }
+
+          label {
+            position: absolute;
+            top: 10%;
+            left: 1rem;
+            transform: translateY(-50%);
+            color: $footer-text;
+            font-weight: $regular-font;
+            transition: all $tr200;
+            cursor: text;
+            z-index: 1;
+          }
+
+          textarea:focus {
+            border: 2px solid $blue;
+          }
+
+          textarea:focus ~ label,
+          textarea:not(:placeholder-shown) ~ label {
+            background-color: $secondary-color;
+            font-size: 0.8rem;
+            color: $blue;
+            padding: 0 0.5rem;
+            top: 0;
+            z-index: 2;
+          }
+        }
+
+        .submit {
+          input {
+            width: 140px;
+            height: 44px;
+            font-weight: $regular-font;
+            color: $white;
+            background-color: $blue;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $blue-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

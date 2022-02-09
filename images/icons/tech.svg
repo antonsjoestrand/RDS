@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 28" style="enable-background:new 0 0 40 28;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{fill:none;stroke:url(#Icon_material-phonelink_00000030465007667883653350000003541557580869323961_);stroke-width:1.25;stroke-miterlimit:10;}
+</style>
+<g>
+	
+		<linearGradient id="Icon_material-phonelink_00000165223383206072340360000007935369070719497145_" gradientUnits="userSpaceOnUse" x1="1.375" y1="14" x2="38.625" y2="14">
+		<stop  offset="1.385225e-07" style="stop-color:#72B8FF"/>
+		<stop  offset="0.9883" style="stop-color:#9889FF"/>
+	</linearGradient>
+	
+		<path id="Icon_material-phonelink" style="fill:none;stroke:url(#Icon_material-phonelink_00000165223383206072340360000007935369070719497145_);stroke-width:1.25;stroke-miterlimit:10;" d="
+		M8,5h27V2H8C6.3,2,5,3.3,5,5v16.5H2V26h21v-4.5H8V5z M36.5,8h-9C26.7,8,26,8.7,26,9.5v15c0,0.8,0.7,1.5,1.5,1.5h9
+		c0.8,0,1.5-0.7,1.5-1.5v-15C38,8.7,37.3,8,36.5,8z M35,21.5h-6V11h6V21.5z"/>
+</g>
+</svg>

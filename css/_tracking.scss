@@ -1,0 +1,207 @@
+.search {
+  position: relative;
+  width: 100%;
+  background-color: $secondary-color;
+  @include flex();
+  overflow: hidden;
+
+  .road {
+    @include bg($url: "../images/road_left.svg", $size: contain);
+    width: 100%;
+    min-width: 1520px;
+    max-width: 1540px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -28%;
+
+    @include media("<desktop") {
+      display: none;
+    }
+
+    img {
+      position: absolute;
+      overflow: visible;
+      left: 72.8%;
+      top: 100%;
+      width: 70px;
+    }
+  }
+
+  .content {
+    width: 55%;
+    max-width: 800px;
+    text-align: center;
+    padding: $section 0;
+    @include flex();
+    gap: 1.5rem;
+
+    @include media("<640px") {
+      width: 80%;
+    }
+
+    .title {
+      h2 {
+        @include title($size: $h2);
+
+        @include media("<phone") {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .track {
+      @include flex($direction: row);
+      gap: 0.5rem;
+      margin-top: 1rem;
+
+      .bar {
+        position: relative;
+
+        input {
+          width: 500px;
+          height: 44px;
+          border: none;
+          outline: none;
+          padding-left: 1rem;
+          color: $white;
+          background-color: $primary-color;
+
+          @include media("<640px") {
+            width: 280px;
+          }
+        }
+
+        label {
+          position: absolute;
+          color: $footer-text;
+          left: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: text;
+          transition: all $tr200;
+        }
+
+        input:focus {
+          border: 2px solid $blue;
+        }
+
+        input:focus ~ label,
+        input:not(:placeholder-shown) ~ label {
+          font-size: 1rem;
+          color: $blue;
+          left: 356px;
+          z-index: 2;
+
+          @include media("<640px") {
+            left: 156px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      button {
+        width: 50px;
+        height: 44px;
+        border: none;
+        background-color: $blue;
+        cursor: pointer;
+        z-index: 1;
+
+        &:hover {
+          background-color: $purple;
+        }
+      }
+    }
+  }
+}
+
+.resources {
+  width: 100%;
+  padding-bottom: $section;
+
+  .section__title {
+    h2 {
+      @include line($offset: -262%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -286%;
+        }
+      }
+    }
+  }
+
+  .column__box {
+    width: 100%;
+    @include flex($direction: row, $justify: space-between);
+    gap: 2rem;
+
+    @include media("<1200px") {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+
+  .column {
+    .image {
+      height: 300px;
+      background-color: darkgray;
+      @include bg_settings();
+
+      @include media("<1200px") {
+        max-width: 380px;
+      }
+
+      @include media("<phone") {
+        min-width: 100%;
+      }
+    }
+
+    .img--app {
+      background-image: url("../images/resources/app.jpg");
+    }
+
+    .img--support {
+      background-image: url("../images/resources/support.jpeg");
+    }
+
+    .content {
+      background-color: $secondary-color;
+      padding: 2.5rem;
+      text-align: center;
+      @include flex();
+      gap: 1.5rem;
+
+      @include media("<1200px") {
+        max-width: 380px;
+        align-items: center;
+      }
+
+      @include media("<phone") {
+        min-width: 100%;
+      }
+
+      h3 {
+        @include title_small();
+      }
+
+      p {
+        @include paragraph();
+      }
+
+      a {
+        @include button();
+        border: 2px solid $blue;
+        color: $blue;
+
+        &:hover {
+          color: $white;
+          border: 2px solid $white;
+        }
+      }
+    }
+  }
+}

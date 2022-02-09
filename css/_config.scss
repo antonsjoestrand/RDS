@@ -1,0 +1,38 @@
+// ---- COLOR VARIABLES ----
+$primary-color: rgb(34, 49, 63);
+$secondary-color: rgb(57, 73, 88);
+$blue: rgb(107, 180, 255);
+$purple: rgb(152, 114, 255);
+$white: rgb(255, 255, 255);
+
+$blue-hover: rgb(67, 159, 255);
+$purple-hover: rgb(123, 76, 255);
+
+$dark-paragraph: rgba(34, 49, 63, 0.9);
+$light-paragraph: rgba(255, 255, 255, 0.7);
+$footer-text: rgba(255, 255, 255, 0.32);
+$footer-button: rgba(255, 255, 255, 0.2);
+$box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+// ---- FONT VARIABLES ----
+$nunito: "Nunito Sans", sans-serif;
+$roboto: "Roboto", sans-serif;
+$light-font: 400;
+$regular-font: 500;
+$bold-font: 700;
+$h1: 3.5rem;
+$h2: 2.2rem;
+$h3: 1.5rem;
+$nav-size: 1.1rem;
+$text-size: 1rem;
+
+// ---- PADDING VARIABLES ----
+$section: 6rem;
+$button-padding: 0.5rem 1rem;
+
+// ---- TRANSITION VARIABLES ----
+$tr100: 100ms ease-in;
+$tr200: 200ms ease-in;
+
+// ---- MIN COLUMN SIZE ----
+$col: 346px;

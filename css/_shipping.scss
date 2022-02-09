@@ -1,0 +1,428 @@
+.expertise {
+  padding-bottom: $section;
+
+  .section__title {
+    h2 {
+      @include line($offset: -370%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -404%;
+        }
+      }
+    }
+  }
+
+  &__box {
+    @include flex($direction: row, $justify: space-between);
+
+    @include media("<1200px") {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .item {
+      width: 31%;
+      max-width: $col;
+
+      @include media("<1080px") {
+        min-width: $col;
+      }
+
+      @include media("<phone") {
+        min-width: 100%;
+      }
+
+      &__icon {
+        position: relative;
+        width: 100%;
+        height: 40px;
+
+        &circle {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -25%);
+          border-radius: 50%;
+          background-color: $primary-color;
+          @include flex();
+
+          .icon {
+            width: 48px;
+            height: 48px;
+            @include bg_settings($size: contain);
+          }
+
+          .icon--1 {
+            background-image: url("../images/icons/healthcare.svg");
+          }
+
+          .icon--2 {
+            background-image: url("../images/icons/cannabis.svg");
+          }
+
+          .icon--3 {
+            background-image: url("../images/icons/legal.svg");
+          }
+        }
+      }
+
+      &__content {
+        width: 100%;
+        height: 100%;
+        background-color: $secondary-color;
+        padding: 4rem 2rem 2rem 2rem;
+        @include flex();
+        gap: 1rem;
+        text-align: center;
+
+        h3 {
+          @include title_small();
+        }
+
+        p {
+          @include paragraph();
+        }
+      }
+    }
+  }
+}
+
+.shipment {
+  width: 100%;
+  background-color: $secondary-color;
+
+  .section__title {
+    h2 {
+      @include line($offset: -252%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -275%;
+        }
+      }
+    }
+  }
+
+  .shipment__box {
+    width: 100%;
+
+    .method {
+      @include flex($direction: row);
+      gap: 0.5rem;
+      padding-bottom: 3rem;
+
+      a {
+        display: block;
+        width: 140px;
+        height: 44px;
+        background-color: $footer-text;
+        cursor: pointer;
+        @include button();
+        @include flex();
+
+        &#rapid:hover {
+          background-color: $purple;
+        }
+
+        &#regular:hover {
+          background-color: $blue;
+        }
+      }
+
+      .rapid--active {
+        background-color: $purple;
+      }
+
+      .regular--active {
+        background-color: $blue;
+      }
+    }
+
+    .form {
+      width: 100%;
+      position: relative;
+      @include flex();
+      padding-bottom: 6rem;
+
+      .form__rapid,
+      .form__regular {
+        width: 55%;
+        display: none;
+
+        @include media("<tablet") {
+          width: 100%;
+        }
+
+        .text {
+          padding-bottom: 3rem;
+
+          h3 {
+            text-align: center;
+            @include title_small();
+            line-height: 2rem;
+          }
+        }
+
+        .steps {
+          width: 100%;
+          height: 100px;
+          @include flex($direction: row, $justify: space-between);
+          margin-bottom: 3rem;
+
+          &__step1 {
+            width: 43.5%;
+            height: 100%;
+          }
+
+          &__step2 {
+            width: 33%;
+            height: 100%;
+          }
+
+          &__step3 {
+            width: 22%;
+            height: 100%;
+          }
+
+          &__step1,
+          &__step2,
+          &__step3 {
+            position: relative;
+
+            .line {
+              position: absolute;
+              width: 100%;
+              height: 3%;
+              top: 50%;
+              transform: translateY(-50%);
+              background-color: $footer-text;
+            }
+
+            .box {
+              width: 60%;
+              height: 100%;
+              @include flex();
+
+              &__truck,
+              &__text {
+                position: relative;
+                width: 75px;
+                height: 50%;
+              }
+
+              &__truck {
+                @include flex();
+
+                i {
+                  font-size: 1.6rem;
+                  color: $blue;
+                }
+              }
+
+              &__text {
+                .line-box {
+                  width: 100%;
+                  height: 60%;
+                  @include flex($justify: flex-end);
+
+                  .text-line {
+                    background-color: $footer-text;
+                    width: 3%;
+                    height: 70%;
+                  }
+                }
+
+                .text {
+                  width: 100%;
+                  height: 40%;
+                  text-align: center;
+                  padding-top: 4px;
+
+                  p {
+                    color: $footer-text;
+                    text-transform: uppercase;
+                    font-weight: $regular-font;
+                  }
+                }
+              }
+            }
+          }
+
+          &__step1 {
+            .line {
+              background-color: $blue;
+            }
+
+            .box {
+              &__text {
+                .line-box {
+                  .text-line {
+                    background-color: $blue;
+                  }
+                }
+
+                .text {
+                  p {
+                    color: $blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        form {
+          width: 100%;
+          @include flex();
+          gap: 2rem;
+
+          .pickup {
+            width: 100%;
+
+            a {
+              display: block;
+              width: 100%;
+              height: 44px;
+              @include flex();
+              background-color: $footer-text;
+              border: none;
+              color: $white;
+              font-weight: $regular-font;
+              cursor: pointer;
+
+              &:hover {
+                background-color: $blue;
+              }
+            }
+          }
+
+          .form__line {
+            width: 100%;
+            height: 44px;
+            @include flex($align: flex-start);
+            gap: 0.5rem;
+
+            p {
+              font-size: $nav-size;
+              font-weight: $regular-font;
+              color: $blue;
+            }
+
+            .line {
+              width: 100%;
+              height: 2.5px;
+              background-color: $blue;
+            }
+          }
+
+          .multi {
+            width: 100%;
+            @include flex($direction: row);
+            gap: 2rem;
+
+            .input-1 {
+              width: 60%;
+            }
+
+            .input-2 {
+              width: 40%;
+            }
+
+            .input-1,
+            .input-2 {
+              position: relative;
+
+              input {
+                width: 100%;
+              }
+            }
+          }
+
+          .single {
+            width: 100%;
+            position: relative;
+
+            input {
+              width: 100%;
+            }
+          }
+
+          .multi,
+          .single {
+            input {
+              position: relative;
+              height: 44px;
+              border: 2px solid $footer-text;
+              outline: none;
+              background: none;
+              padding-left: 1rem;
+              color: $white;
+              z-index: 2;
+              transition: border $tr200;
+            }
+
+            label {
+              position: absolute;
+              top: 50%;
+              left: 1rem;
+              transform: translateY(-50%);
+              color: $footer-text;
+              font-weight: $regular-font;
+              transition: all $tr200;
+              cursor: text;
+              z-index: 1;
+            }
+
+            input:focus {
+              border: 2px solid $blue;
+            }
+
+            input:focus ~ label,
+            input:not(:placeholder-shown) ~ label {
+              background-color: $secondary-color;
+              font-size: 0.8rem;
+              color: $blue;
+              padding: 0 0.5rem;
+              top: 0;
+              z-index: 2;
+            }
+          }
+
+          .submit {
+            input {
+              width: 140px;
+              height: 44px;
+              font-weight: $regular-font;
+              color: $white;
+              background-color: $blue;
+              border: none;
+              cursor: pointer;
+
+              &:hover {
+                background-color: $blue-hover;
+              }
+            }
+          }
+
+          .pickup__input {
+            display: none;
+          }
+
+          .pickup--active {
+            display: flex;
+          }
+        }
+      }
+
+      .form--active {
+        display: block;
+      }
+    }
+  }
+}

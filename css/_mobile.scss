@@ -1,0 +1,166 @@
+/* ====================== MOBILE NAVIGATION ====================== */
+
+@include media("<tablet") {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    z-index: 99;
+
+    .mobile {
+      position: relative;
+      width: 100%;
+      padding: 1rem 2rem;
+      @include flex($direction: row, $justify: space-between);
+      z-index: 99;
+
+      svg {
+        width: 105px;
+      }
+
+      .stl0 {
+        fill: #6bb4ff;
+        transition: all $tr100;
+      }
+
+      .stl1 {
+        fill: #ffffff;
+      }
+
+      .hamburger {
+        display: block;
+        background-color: $white;
+        width: 35px;
+        cursor: pointer;
+
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+      }
+
+      .hamburger .bar,
+      .hamburger:before,
+      .hamburger:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: $white;
+        margin: 6px 0px;
+        transition: all $tr200;
+      }
+
+      .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+      .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -6px);
+      }
+
+      .hamburger.is-active .bar {
+        opacity: 0;
+      }
+    }
+
+    .mobile__menu {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 100%;
+      background-color: $primary-color;
+      z-index: 98;
+      padding-top: 72px;
+      transition: all $tr200;
+
+      ul {
+        list-style: none;
+
+        .mobile__drop,
+        a {
+          display: block;
+          width: 100vw;
+          text-transform: uppercase;
+          text-align: center;
+          color: $white;
+          font-size: 1.4rem;
+          padding: 1.5rem 0;
+          border-top: 2px solid $secondary-color;
+        }
+
+        li:nth-child(5) a {
+          border-bottom: 2px solid $secondary-color;
+        }
+
+        .mobile__drop {
+          position: relative;
+          cursor: pointer;
+          -webkit-user-select: none; /* Safari */
+          -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+          user-select: none; /* Standard */
+
+          i {
+            font-size: 1.6rem;
+            position: absolute;
+            top: 50%;
+            right: 2.8rem;
+            transform: translateY(-50%);
+          }
+
+          i.rotate {
+            color: $blue;
+            transform: rotate(90deg);
+            top: 35%;
+          }
+
+          &menu {
+            background-color: $secondary-color;
+            display: none;
+
+            a {
+              border-top: none;
+            }
+          }
+        }
+
+        .drop--active {
+          display: block;
+          color: $blue;
+        }
+      }
+    }
+
+    .mobile__menu.is-active {
+      left: 0;
+    }
+
+    .mobile__cta {
+      width: 100vw;
+      @include flex();
+      background-color: $purple;
+
+      a {
+        width: 100vw;
+        color: $white;
+        font-size: $nav-size;
+        font-weight: $regular-font;
+        text-align: center;
+        padding: 0.8rem 0;
+
+        i {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

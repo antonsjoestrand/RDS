@@ -1,0 +1,188 @@
+/* ====================== SERVICES PAGES ====================== */
+
+.offering {
+  padding-bottom: $section;
+
+  .section__title {
+    h2 {
+      @include line($offset: -328%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -358%;
+        }
+      }
+    }
+  }
+
+  &__box {
+    @include flex($direction: row, $justify: space-between);
+
+    @include media("<1200px") {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .item {
+      width: 31%;
+      max-width: $col;
+
+      @include media("<1080px") {
+        min-width: $col;
+      }
+
+      @include media("<phone") {
+        min-width: 100%;
+      }
+
+      &__icon {
+        position: relative;
+        width: 100%;
+        height: 40px;
+
+        &circle {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -25%);
+          border-radius: 50%;
+          background-color: $primary-color;
+          @include flex();
+
+          .icon {
+            width: 48px;
+            height: 48px;
+            @include bg_settings($size: contain);
+          }
+
+          .icon--1 {
+            background-image: url("../images/icons/package.svg");
+          }
+
+          .icon--2 {
+            background-image: url("../images/icons/secure.svg");
+          }
+
+          .icon--3 {
+            background-image: url("../images/icons/tracking.svg");
+          }
+        }
+      }
+
+      &__content {
+        width: 100%;
+        height: 100%;
+        background-color: $secondary-color;
+        padding: 4rem 2rem 2rem 2rem;
+        @include flex();
+        gap: 1rem;
+        text-align: center;
+
+        h3 {
+          @include title_small();
+        }
+
+        p {
+          @include paragraph();
+        }
+      }
+    }
+  }
+}
+
+.description {
+  background-color: $secondary-color;
+
+  .section__title {
+    h2 {
+      @include line($offset: -574%);
+
+      @include media("<phone") {
+        &:before,
+        &:after {
+          left: -624%;
+        }
+      }
+    }
+  }
+
+  &__box {
+    width: 100%;
+    @include flex($direction: row);
+    padding-bottom: $section;
+
+    @include media("<tablet") {
+      flex-direction: column;
+
+      .image {
+        order: 1;
+      }
+
+      .content {
+        order: 2;
+      }
+    }
+
+    .content,
+    .image {
+      width: 50%;
+
+      @include media("<tablet") {
+        width: 100%;
+      }
+    }
+
+    .content {
+      padding-right: 3.5rem;
+      @include flex($align: flex-start);
+      gap: 1rem;
+
+      h3 {
+        @include title_small();
+        line-height: 1.8rem;
+
+        @include media("<tablet") {
+          padding-top: 3rem;
+        }
+      }
+
+      p {
+        @include paragraph();
+        padding-bottom: 1rem;
+      }
+
+      a {
+        @include button($color: $blue);
+        border: 2px solid $blue;
+
+        &:hover {
+          color: $white;
+          border: 2px solid $white;
+        }
+      }
+    }
+
+    .image {
+      padding-left: 3.5rem;
+      height: 340px;
+      @include bg_settings();
+      box-shadow: $box-shadow;
+    }
+
+    .img--1 {
+      background-image: url("../images/healthcare-card.jpg");
+    }
+
+    .img--2 {
+      background-image: url("../images/cannabis-card.jpg");
+    }
+
+    .img--3 {
+      background-image: url("../images/legal-card.jpg");
+    }
+  }
+}
