@@ -281,8 +281,8 @@
 .download__box {
   position: relative;
   width: 100%;
-  background-color: #394958;
-  background: linear-gradient(360deg, #22313f 0%, #394958 100%);
+  background-color: #283d51;
+  background: linear-gradient(360deg, #22313f 0%, #283d51 100%);
   padding: 4.5rem 0;
   z-index: 1;
   overflow: hidden;
@@ -745,7 +745,7 @@
 .statement {
   position: relative;
   width: 100%;
-  background-color: #394958;
+  background-color: #283d51;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -944,7 +944,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #394958;
+  background-color: #283d51;
 }
 @media (max-width: 1079px) {
   .overview .services__box .card {
@@ -1035,7 +1035,7 @@
 .reviews {
   position: relative;
   width: 100%;
-  background-color: #394958;
+  background-color: #283d51;
   padding-bottom: 6rem;
 }
 .reviews .section__title h2:before, .reviews .section__title h2:after {
@@ -1232,7 +1232,7 @@
   background-color: white;
 }
 .about .approach {
-  background-color: #394958;
+  background-color: #283d51;
 }
 .about .content {
   display: flex;
@@ -1578,11 +1578,11 @@
   gap: 0.1rem;
   padding-left: 1.5rem;
   z-index: 2;
-  border-bottom: 2px solid #394958;
+  border-bottom: 2px solid #283d51;
 }
 .team__box .members .profile--active {
   position: relative;
-  background-color: #394958;
+  background-color: #283d51;
   z-index: 1;
 }
 .team__box .members .profile--active:after {
@@ -1617,7 +1617,7 @@
   position: relative;
   width: 45%;
   height: 520px;
-  background-color: #394958;
+  background-color: #283d51;
 }
 .team__box .member__quote .quote {
   position: absolute;
@@ -1797,7 +1797,7 @@
 .offering__box .item__content {
   width: 100%;
   height: 100%;
-  background-color: #394958;
+  background-color: #283d51;
   padding: 4rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -1821,7 +1821,7 @@
 }
 
 .description {
-  background-color: #394958;
+  background-color: #283d51;
 }
 .description .section__title h2:before, .description .section__title h2:after {
   content: "";
@@ -2019,7 +2019,7 @@
 .expertise__box .item__content {
   width: 100%;
   height: 100%;
-  background-color: #394958;
+  background-color: #283d51;
   padding: 4rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -2044,7 +2044,7 @@
 
 .shipment {
   width: 100%;
-  background-color: #394958;
+  background-color: #283d51;
 }
 .shipment .section__title h2:before, .shipment .section__title h2:after {
   content: "";
@@ -2393,7 +2393,7 @@
   border: 2px solid #6bb4ff;
 }
 .shipment .shipment__box .form .form__rapid form .multi input:not(:-moz-placeholder-shown) ~ label, .shipment .shipment__box .form .form__rapid form .single input:not(:-moz-placeholder-shown) ~ label, .shipment .shipment__box .form .form__regular form .multi input:not(:-moz-placeholder-shown) ~ label, .shipment .shipment__box .form .form__regular form .single input:not(:-moz-placeholder-shown) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -2401,7 +2401,7 @@
   z-index: 2;
 }
 .shipment .shipment__box .form .form__rapid form .multi input:not(:-ms-input-placeholder) ~ label, .shipment .shipment__box .form .form__rapid form .single input:not(:-ms-input-placeholder) ~ label, .shipment .shipment__box .form .form__regular form .multi input:not(:-ms-input-placeholder) ~ label, .shipment .shipment__box .form .form__regular form .single input:not(:-ms-input-placeholder) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -2416,7 +2416,7 @@
 .shipment .shipment__box .form .form__regular form .multi input:not(:placeholder-shown) ~ label,
 .shipment .shipment__box .form .form__regular form .single input:focus ~ label,
 .shipment .shipment__box .form .form__regular form .single input:not(:placeholder-shown) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -2453,7 +2453,7 @@
 .search {
   position: relative;
   width: 100%;
-  background-color: #394958;
+  background-color: #283d51;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2658,7 +2658,7 @@
   background-image: url("../images/resources/support.jpeg");
 }
 .resources .column .content {
-  background-color: #394958;
+  background-color: #283d51;
   padding: 2.5rem;
   text-align: center;
   display: flex;
@@ -2840,7 +2840,7 @@
   background-image: url("../images/resources/support.jpeg");
 }
 .support .column .content {
-  background-color: #394958;
+  background-color: #283d51;
   padding: 2.5rem;
   text-align: center;
   display: flex;
@@ -2887,7 +2887,7 @@
 }
 
 .locations {
-  background-color: #394958;
+  background-color: #283d51;
 }
 .locations .section__title h2:before, .locations .section__title h2:after {
   content: "";
@@ -3022,7 +3022,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #394958;
+  background-color: #283d51;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3058,7 +3058,7 @@
 
 .contact__form {
   width: 100%;
-  background-color: #394958;
+  background-color: #283d51;
 }
 .contact__form .section__title h2:before, .contact__form .section__title h2:after {
   content: "";
@@ -3194,7 +3194,7 @@
   border: 2px solid #6bb4ff;
 }
 .contact__form .contact__box .form form .multi input:not(:-moz-placeholder-shown) ~ label, .contact__form .contact__box .form form .single input:not(:-moz-placeholder-shown) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -3202,7 +3202,7 @@
   z-index: 2;
 }
 .contact__form .contact__box .form form .multi input:not(:-ms-input-placeholder) ~ label, .contact__form .contact__box .form form .single input:not(:-ms-input-placeholder) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -3213,7 +3213,7 @@
 .contact__form .contact__box .form form .multi input:not(:placeholder-shown) ~ label,
 .contact__form .contact__box .form form .single input:focus ~ label,
 .contact__form .contact__box .form form .single input:not(:placeholder-shown) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -3249,7 +3249,7 @@
   border: 2px solid #6bb4ff;
 }
 .contact__form .contact__box .form form .message textarea:not(:-moz-placeholder-shown) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -3257,7 +3257,7 @@
   z-index: 2;
 }
 .contact__form .contact__box .form form .message textarea:not(:-ms-input-placeholder) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -3266,7 +3266,7 @@
 }
 .contact__form .contact__box .form form .message textarea:focus ~ label,
 .contact__form .contact__box .form form .message textarea:not(:placeholder-shown) ~ label {
-  background-color: #394958;
+  background-color: #283d51;
   font-size: 0.8rem;
   color: #6bb4ff;
   padding: 0 0.5rem;
@@ -3417,10 +3417,10 @@
     color: white;
     font-size: 1.4rem;
     padding: 1.5rem 0;
-    border-top: 2px solid #394958;
+    border-top: 2px solid #283d51;
   }
   .footer .content .mobile__nav li:nth-child(4) a {
-    border-bottom: 2px solid #394958;
+    border-bottom: 2px solid #283d51;
   }
   .footer .content .mobile__social {
     display: flex;
@@ -3723,10 +3723,10 @@
     color: white;
     font-size: 1.4rem;
     padding: 1.5rem 0;
-    border-top: 2px solid #394958;
+    border-top: 2px solid #283d51;
   }
   .mobile-nav .mobile__menu ul li:nth-child(5) a {
-    border-bottom: 2px solid #394958;
+    border-bottom: 2px solid #283d51;
   }
   .mobile-nav .mobile__menu ul .mobile__drop {
     position: relative;
@@ -3753,7 +3753,7 @@
     top: 35%;
   }
   .mobile-nav .mobile__menu ul .mobile__dropmenu {
-    background-color: #394958;
+    background-color: #283d51;
     display: none;
   }
   .mobile-nav .mobile__menu ul .mobile__dropmenu a {

@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 // ---- CONFIG ----
-@import "config.scss";
+@import "_config.scss";
 
 // ---- MIXINS ----
-@import "mixins.scss";
+@import "_mixins.scss";
 
 // ---- BREAKPOINTS ----
-@import "breakpoints.scss";
+@import "_breakpoints.scss";
 
 /* ---- RESETS & WRAPPER ---- */
 
@@ -856,23 +856,23 @@
 
 /* ====================== ABOUT ====================== */
 
-@import "about.scss";
+@import "_about.scss";
 
 /* ====================== SERVICES ====================== */
 
-@import "services.scss";
+@import "_services.scss";
 
 /* ====================== SHIPPING ====================== */
 
-@import "shipping.scss";
+@import "_shipping.scss";
 
 /* ====================== TRACKING ====================== */
 
-@import "tracking.scss";
+@import "_tracking.scss";
 
 /* ====================== CONTACT ====================== */
 
-@import "contact.scss";
+@import "_contact.scss";
 
 /* ====================== 404 PAGE ====================== */
 
